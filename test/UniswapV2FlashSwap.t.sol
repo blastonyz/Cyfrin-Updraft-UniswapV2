@@ -10,12 +10,10 @@ import {UniswapV2FlashSwap} from "../src/UniswapV2FlashSwap.sol";
 contract UniswapV2FlashSwapTest is Test {
     address private constant DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
     address private constant UNISWAP_V2_PAIR_DAI_WETH = 0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11;
-    address private constant UNISWAP_V2_ROUTER_02 =
-        0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
+    address private constant UNISWAP_V2_ROUTER_02 = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
 
     IERC20 private constant dai = IERC20(DAI);
-    IUniswapV2Router02 private constant router =
-        IUniswapV2Router02(UNISWAP_V2_ROUTER_02);
+    IUniswapV2Router02 private constant router = IUniswapV2Router02(UNISWAP_V2_ROUTER_02);
 
     UniswapV2FlashSwap private flashSwap;
 

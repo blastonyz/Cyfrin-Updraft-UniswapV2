@@ -6,20 +6,17 @@ import "uniswapv2-core/contracts/interfaces/IERC20.sol";
 import "uniswapv2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 import {IWETH} from "uniswapv2-periphery/contracts/interfaces/IWETH.sol";
 
-
 contract UniswapV2SwapAmountsTest is Test {
     // Mainnet addresses - make sure to fork mainnet for testing
     address private constant WETH = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
     address private constant DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
     address private constant MKR = 0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2;
-    address private constant UNISWAP_V2_ROUTER_02 =
-        0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
+    address private constant UNISWAP_V2_ROUTER_02 = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
 
     IWETH private weth = IWETH(WETH);
     IERC20 private dai = IERC20(DAI);
     IERC20 private mkr = IERC20(MKR);
-    IUniswapV2Router02 private router =
-        IUniswapV2Router02(UNISWAP_V2_ROUTER_02);
+    IUniswapV2Router02 private router = IUniswapV2Router02(UNISWAP_V2_ROUTER_02);
 
     address private constant user = address(100);
 
