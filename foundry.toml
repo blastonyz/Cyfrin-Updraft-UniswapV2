@@ -1,0 +1,21 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.20"
+auto_detect_solc = true
+evm_version = "paris"
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+# Permitir via-ir para compilación optimizada
+via_ir = false
+
+remappings = [
+  "forge-std/=lib/forge-std/src/",
+  "uniswapv2-core/=lib/v2-core/",
+  "uniswapv2-periphery/=lib/v2-periphery/",
+  "solidity-lib/=lib/solidity-lib/",
+  "openzeppelin-contracts/=lib/openzeppelin-contracts"
+]
+
